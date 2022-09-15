@@ -38,7 +38,7 @@ exports.getProducts = async (req, res) => {
     data = data.map((item) => {
       return {
         ...item,
-        image: process.env.PATH_FILE + item.image,
+        image: process.env.PATH_FILE,
       };
     });
 
