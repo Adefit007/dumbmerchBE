@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/unit/",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "client": "npm start --prefix ../client",
-    "dev": "nodemon server.js"
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
@@ -29,6 +28,7 @@
     "pg": "^8.8.0",
     "rupiah-format": "^1.0.0",
     "sequelize": "^6.21.2",
-    "sequelize-cli": "^6.4.1"
+    "sequelize-cli": "^6.4.1",
+    "socket.io": "^4.5.1"
   }
 }
