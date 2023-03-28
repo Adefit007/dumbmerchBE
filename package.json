@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":"mocha tests/unit/",
+    "test": "mocha tests/unit/",
     "start": "node server.js",
     "client": "npm start --prefix ../client",
     "dev": "nodemon server.js"
@@ -29,7 +29,6 @@
     "pg": "^8.8.0",
     "rupiah-format": "^1.0.0",
     "sequelize": "^6.21.2",
-    "sequelize-cli": "^6.4.1",
-    "socket.io": "^4.5.1"
+    "sequelize-cli": "^6.4.1"
   }
 }
