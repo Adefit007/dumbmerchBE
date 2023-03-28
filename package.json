@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "test":"mocha tests/unit/",
+    "start": "node server.js",
     "client": "npm start --prefix ../client",
-    "dev": "concurrently \"npm start\" \"npm run client\""
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
